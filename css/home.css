@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: #fffaf0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.__container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.content__container {
+  max-width: 550px;
+  margin: 150px auto;
+}
+
+.image {
+  position: relative;
+  z-index: 50;
+  width: 263px;
+  border: 5px solid #ecddc1;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #ecddc1;
+          box-shadow: 0 0 10px #ecddc1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.image__container {
+  text-align: center;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.image:hover {
+  border: 0;
+  z-index: 56;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.text__container {
+  position: relative;
+  z-index: 50;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 350px;
+}
+
+.namesite {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 20px 0 10px 0;
+}
+
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main__text {
+  font-size: 20px;
+}
+
+.main-block_buttons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 50;
+  margin: 10px 0px 0px 100px;
+  width: 100%;
+}
+
+@media (max-width: 635px) and (max-width: 652px) {
+  .main-block_buttons {
+    margin: 10px 0px 0px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-block_buttons {
+    margin: 10px 0px 0px 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .main-block_buttons {
+    margin: 10px 10px 0px 10px;
+  }
+}
+
+.main-block_botton {
+  border-radius: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 150%;
+  padding: 5px 36px;
+  margin: 0px 25px 0px 0px;
+}
+
+.vk_page {
+  margin-top: 10px;
+  background: #ecddc1;
+  color: white;
+  width: 175px;
+  font-size: 2.5em;
+  opacity: 0.85;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.vk_page i {
+  position: relative;
+  padding: 87.5;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.vk_page i:hover {
+  z-index: 11;
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  opacity: 1;
+}
+
+.vk_page:hover {
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  z-index: 10;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+.git__page {
+  margin-top: 10px;
+  color: #000;
+  inset: 20px;
+  width: 175px;
+  font-size: 2.5em;
+  opacity: 1;
+  border: 2px solid #ecddc1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.git__page:hover {
+  -webkit-box-shadow: 0 0 5px 2px #ecddc177;
+          box-shadow: 0 0 5px 2px #ecddc177;
+  z-index: 10;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.git_page i {
+  position: relative;
+  padding: 87.5;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.git_page i:hover {
+  z-index: 11;
+  -webkit-transform: rotate(-360deg) scale(1.2);
+          transform: rotate(-360deg) scale(1.2);
+  opacity: 1;
+}
+
+@media (max-width: 390px) {
+  .git {
+    margin: 10px;
+    margin-left: 5px;
+  }
+}
