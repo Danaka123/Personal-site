@@ -395,8 +395,12 @@ nav a {
   height: 400px;
 }
 @media (max-width: 650px) {
+  .work {
+    margin: 0 10px;
+  }
   .works__item {
     width: 100%;
+    height: 600px;
   }
 }
 .works__photo {
