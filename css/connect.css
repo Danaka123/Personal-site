@@ -394,6 +394,11 @@ nav a {
   overflow: hidden;
   height: 400px;
 }
+@media (max-width: 650px) {
+  .works__item {
+    width: 100%;
+  }
+}
 .works__photo {
   position: absolute;
   z-index: 1;
